@@ -1,5 +1,5 @@
 function navigate(url) {
-	const main = "https://christiandetailing.com/";
+	const main = "https://www.christiandetailing.com/";
 	if (url == 'home') {
 		window.location.href = main;
 	} else {
