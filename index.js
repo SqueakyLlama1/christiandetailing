@@ -1,18 +1,18 @@
 function navigate(url) {
-	document.getElementById('loadshade').style.display = "block";
-	const universe = "https://universe-os.com/";
+	const main = "https://christiandetailing.com/";
 	if (url == 'home') {
-		window.location.href = universe;
+		window.location.href = main;
 	} else {
-		window.location.href = universe + url;
+		window.location.href = main + url;
 	}
 }
 
 function applyNavigation() {
 	const navcontent = `
-	<button onclick="navigate('home')">Home</button><br>
-	<button onclick="navigate('download/')">Download</button><br>
- 	<button onclick="navigate('contact/')">Contact</button>`
+	<button onclick="navigate('home')">Home</button>
+ 	<button onclick="navigate('range/')">Range</button>
+  	<button onclick="navigate('pricing/')">Pricing</button>
+   	<button onclick="navigate('contact/')">Contact</button>`
 	document.getElementById('navigation').innerHTML = navcontent;
 }
 
