@@ -17,11 +17,11 @@ body {
 }
 
 img {
-    border-radius: 7px;
+	border-radius: 7px;
 }
 
 * img {
-    border-radius: 7px;
+	border-radius: 7px;
 }
 
 body.visible {
@@ -74,36 +74,25 @@ body.fade-out {
 
 #mobile #mnavigation {
     height: 5%;
-    min-height: 50px;
     width: 100%;
     background-color: #006eff;
     border: none;
     border-bottom: 3px solid #004bad;
 }
 
-#mobile #mnavigation .center,
-#mobile #mnavigation .middle {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#mobile #mnavigation .loader,
 #mobile #mnavigation select {
     width: 95%;
     height: 95%;
-    max-height: 100%;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-#mobile #mnavigation select {
     background-color: #0328fc;
     border: 2px solid #0328fc;
+    border-radius: 4px;
     color: white;
     font-weight: bolder;
     font-size: 15px;
+}
+
+#mobile #mnavigation .center {
+    height: 100%;
 }
 
 #desktop, #mobile {
