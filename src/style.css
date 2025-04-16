@@ -142,24 +142,20 @@ body.fade-out {
 
 @media screen and (max-width: 500px) {
     #mobile {
-        opacity: 1;
-        pointer-events: auto;
+        display: block;
     }
 
     #desktop {
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
 }
 
 @media screen and (min-width: 501px) {
     #desktop {
-        opacity: 1;
-        pointer-events: auto;
+        display: block;
     }
 
     #mobile {
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
 }
