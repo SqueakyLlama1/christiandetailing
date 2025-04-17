@@ -42,6 +42,8 @@ function populateMobileNavigation() {
         select.appendChild(option);
     });
 
+    document.getElementById('navigation-select').style.width = "100%"
+
     setTimeout(() => {
         middleDiv.innerHTML = '';
         middleDiv.appendChild(select);
