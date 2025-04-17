@@ -1,61 +1,83 @@
 var navigationButtons = [
     { label: "Home", url: "index.html" },
-	{ label: "Contact", url: "contact.html"},
+    { label: "Contact", url: "contact.html" },
     { label: "Range", url: "range.html" },
-	{ label: "Jobs", url: "jobs.html" },
-	{ label: "Blog", url: "blog.html" },
-	{ label: "Tiers", url: "tiers.html" },
-	{ label: "Reviews", url: "reviews.html" },
-	{ label: "Pricing & Payment", url: "pricing.html" },
-	{ label: "Terms & Conditions", url: "terms.html"}
+    { label: "Jobs", url: "jobs.html" },
+    { label: "Blog", url: "blog.html" },
+    { label: "Tiers", url: "tiers.html" },
+    { label: "Reviews", url: "reviews.html" },
+    { label: "Pricing & Payment", url: "pricing.html" },
+    { label: "Terms & Conditions", url: "terms.html" }
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
+    let specialScript = document.createElement('script');
+    specialScript.type = "text/javascript";
+    specialScript.innerHTML = `
+    (function() {
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 2008658282]);
+        var ldinsp = function(){
+            if(typeof window.__inspld != "undefined") return; 
+            window.__inspld = 1; 
+            var insp = document.createElement('script'); 
+            insp.type = 'text/javascript'; 
+            insp.async = true; 
+            insp.id = "inspsync"; 
+            insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=2008658282&r=' + Math.floor(new Date().getTime()/3600000); 
+            var x = document.getElementsByTagName('script')[0]; 
+            x.parentNode.insertBefore(insp, x); 
+        };
+        setTimeout(ldinsp, 0);
+    })();
+    `;
+    document.head.appendChild(specialScript);
+
     setTimeout(function() {
-		document.body.classList.add('visible');
-    	populateMobileNavigation();
-    	populateDesktopNavigation();
-	}, 250);
+        document.body.classList.add('visible');
+        populateMobileNavigation();
+        populateDesktopNavigation();
+    }, 250);
 });
 
 var navMenuOpen = false;
 
 function openNavMenu() {
-	if (!navMenuOpen) {
-		document.getElementById('navmenu').style.display = "block";
-	}
-	navMenuOpen = true;
+    if (!navMenuOpen) {
+        document.getElementById('navmenu').style.display = "block";
+    }
+    navMenuOpen = true;
 }
 
 function closeNavMenu() {
-	if (navMenuOpen) {
-		document.getElementById('navmenu').style.display = "none";
-	}
-	navMenuOpen = false;
+    if (navMenuOpen) {
+        document.getElementById('navmenu').style.display = "none";
+    }
+    navMenuOpen = false;
 }
 
 function populateMobileNavigation() {
     let navigationContainer = document.getElementById('mnavigation');
     let middleDiv = document.createElement('div');
     middleDiv.classList.add('middle');
-    
+
     let navbutton = document.createElement('button');
     navbutton.textContent = "Switch Page";
     navbutton.onclick = openNavMenu;
-    
+
     let menu = document.createElement("div");
     menu.id = "navmenu";
-	menu.classList.add('navmenu');
+    menu.classList.add('navmenu');
     menu.style.display = "none";
     document.getElementById('mobile').appendChild(menu);
-    
+
     let cancelBtn = document.createElement('button');
     cancelBtn.textContent = "Cancel";
     cancelBtn.onclick = closeNavMenu;
     menu.appendChild(cancelBtn);
 
-	let center = document.createElement('center');
-    
+    let center = document.createElement('center');
+
     navigationButtons.forEach(button => {
         let option = document.createElement('button');
         option.textContent = button.label;
@@ -65,10 +87,10 @@ function populateMobileNavigation() {
         center.appendChild(option);
         center.appendChild(document.createElement('br'));
     });
-    
+
     setTimeout(() => {
         navigationContainer.innerHTML = '';
-		menu.appendChild(center);
+        menu.appendChild(center);
         middleDiv.appendChild(navbutton);
         navigationContainer.appendChild(middleDiv);
     }, 750);
@@ -80,16 +102,16 @@ function populateDesktopNavigation() {
     middleDiv.classList.add('middle');
 
     setTimeout(() => {
+        navigationContainer.innerHTML = '';
         navigationButtons.forEach(button => {
-			navigationContainer.innerHTML = '';
-    		navigationContainer.appendChild(middleDiv);
             let buttonElement = document.createElement("button");
             buttonElement.textContent = button.label;
-            buttonElement.onclick = function() {
+            buttonElement.onclick = function(event) {
                 navigate(event, button.url);
             };
             middleDiv.appendChild(buttonElement);
         });
+        navigationContainer.appendChild(middleDiv);
     }, 750);
 }
 
