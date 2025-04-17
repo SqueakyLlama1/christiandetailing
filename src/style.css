@@ -5,8 +5,6 @@ html, head, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-    height: 100vh;
     transition: opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
 
