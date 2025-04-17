@@ -121,7 +121,7 @@ body.fade-out {
 }
 
 #desktop {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     opacity: 0;
     pointer-events: none;
@@ -133,7 +133,7 @@ body.fade-out {
 }
 
 #mobile {
-    width: 100;
+    width: 100vw;
     height: 100vh;
     opacity: 0;
     pointer-events: none;
