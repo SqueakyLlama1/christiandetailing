@@ -81,7 +81,7 @@ body.fade-out {
 }
 
 #mobile #mnavigation select {
-    width: 100%;
+    width: auto;
     height: 95%;
     background-color: #0328fc;
     border: 2px solid #0328fc;
