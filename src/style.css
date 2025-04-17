@@ -179,7 +179,6 @@ body.fade-out {
     #mobile {
         opacity: 1;
         pointer-events: auto;
-		min-width: 500px;
     }
 
     #desktop {
