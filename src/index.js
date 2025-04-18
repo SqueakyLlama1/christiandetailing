@@ -11,28 +11,6 @@ var navigationButtons = [
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-    let specialScript = document.createElement('script');
-    specialScript.type = "text/javascript";
-    specialScript.innerHTML = `
-    (function() {
-        window.__insp = window.__insp || [];
-        __insp.push(['wid', 2008658282]);
-        var ldinsp = function(){
-            if(typeof window.__inspld != "undefined") return; 
-            window.__inspld = 1; 
-            var insp = document.createElement('script'); 
-            insp.type = 'text/javascript'; 
-            insp.async = true; 
-            insp.id = "inspsync"; 
-            insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=2008658282&r=' + Math.floor(new Date().getTime()/3600000); 
-            var x = document.getElementsByTagName('script')[0]; 
-            x.parentNode.insertBefore(insp, x); 
-        };
-        setTimeout(ldinsp, 0);
-    })();
-    `;
-    document.head.appendChild(specialScript);
-
     setTimeout(function() {
         document.body.classList.add('visible');
         populateMobileNavigation();
@@ -44,7 +22,7 @@ var navMenuOpen = false;
 
 function openNavMenu() {
     if (!navMenuOpen) {
-        document.getElementById('navmenu').style.display = "block";
+        document.getElementById('navmenu').style.display = "flex";
     }
     navMenuOpen = true;
 }
