@@ -96,10 +96,11 @@ body.fade-out {
 	width: 75%;
 	height: 85%;
 	background-color: #006eff;
-	border: 2px solid #004bad;
+	border: 2px solid #006eff;
 	border-radius: 7px;
 	z-index: 9999;
 	display: none;
+ gap: 5px;
 }
 
 .navmenu button {
@@ -107,13 +108,13 @@ body.fade-out {
 	width: 100%;
 	background-color: #004bad;
 	border-radius: 7px;
-	margin-bottom: 7px;
 	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 7px;
 	border: none;
 	color: white;
 	font-weight: bolder;
 	font-size: 15px;
+ flex: 1;
 }
 
 #mobile #mnavigation .center {
