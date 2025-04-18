@@ -100,10 +100,16 @@ body.fade-out {
 	border-radius: 7px;
 	z-index: 9999;
 	display: none;
- gap: 5px;
 }
 
-.navmenu button {
+.navmenu center {
+ didplay: flex;
+ gap: 5px;
+ width: 100%
+ height: 100%;
+}
+
+.navmenu center button {
 	height: auto;
 	width: 100%;
 	background-color: #004bad;
