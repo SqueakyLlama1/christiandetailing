@@ -63,7 +63,6 @@ function populateMobileNavigation() {
             navigate(event, button.url);
         };
         center.appendChild(option);
-        center.appendChild(document.createElement('br'));
     });
 
     setTimeout(() => {
