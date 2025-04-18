@@ -12,6 +12,7 @@ var navigationButtons = [
 
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
+        document.getElementById('mnavcontainer').addEventListener('click', closeNavMenu):
         document.body.classList.add('visible');
         populateMobileNavigation();
         populateDesktopNavigation();
