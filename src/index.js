@@ -84,6 +84,7 @@ function populateMobileNavigation() {
         navigationContainer.innerHTML = '';
         middleDiv.appendChild(navbutton);
         navigationContainer.appendChild(middleDiv);
+        document.getElementById('mnavcontainer').addEventListener('click', closeNavMenu);
     }, 750);
 }
 
