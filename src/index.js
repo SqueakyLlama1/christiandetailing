@@ -22,14 +22,14 @@ var navMenuOpen = false;
 
 function openNavMenu() {
     if (!navMenuOpen) {
-        document.getElementById('mnavCenter').style.display = "flex";
+        document.getElementById('navmenu').style.display = "flex";
     }
     navMenuOpen = true;
 }
 
 function closeNavMenu() {
     if (navMenuOpen) {
-        document.getElementById('mnavCenter').style.display = "none";
+        document.getElementById('navmenu').style.display = "none";
     }
     navMenuOpen = false;
 }
