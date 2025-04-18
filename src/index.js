@@ -54,7 +54,7 @@ function populateMobileNavigation() {
     cancelBtn.onclick = closeNavMenu;
 
     let center = document.createElement('center');
-center.appendChild(cancelButton);
+center.appendChild(cancelBtn);
 center.id = "mnavCenter";
 
     navigationButtons.forEach(button => {
