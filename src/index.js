@@ -22,14 +22,14 @@ var navMenuOpen = false;
 
 function openNavMenu() {
     if (!navMenuOpen) {
-        document.getElementById('navmenu').style.display = "flex";
+        document.getElementById('mnavCenter').style.display = "flex";
     }
     navMenuOpen = true;
 }
 
 function closeNavMenu() {
     if (navMenuOpen) {
-        document.getElementById('navmenu').style.display = "none";
+        document.getElementById('mnavCenter').style.display = "none";
     }
     navMenuOpen = false;
 }
@@ -55,6 +55,7 @@ function populateMobileNavigation() {
 
     let center = document.createElement('center');
 center.appendChild(cancelButton);
+center.id = "mnavCenter";
 
     navigationButtons.forEach(button => {
         let option = document.createElement('button');
