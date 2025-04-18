@@ -52,9 +52,9 @@ function populateMobileNavigation() {
     let cancelBtn = document.createElement('button');
     cancelBtn.textContent = "Cancel";
     cancelBtn.onclick = closeNavMenu;
-    menu.appendChild(cancelBtn);
 
     let center = document.createElement('center');
+center.appendChild(cancelButton);
 
     navigationButtons.forEach(button => {
         let option = document.createElement('button');
