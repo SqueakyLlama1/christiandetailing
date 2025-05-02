@@ -1,3 +1,0 @@
--Fix mobile site
--Fix desktop navigation text
--Disable text wrapping on desktop navigation

@@ -1,14 +1,14 @@
+<!DOCTYPE html>
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale: 1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Christian Detailing | Home</title>
-
-		<link rel="stylesheet" href="src/style.css">
-		<link rel="icon" type="x/png" href="img/favicon.png">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link rel="stylesheet" href="src/index.css">
 
 		<style>
-			.portarait {
+			.logo {
 				width: 25%;
 				height: auto;
 				object-fit: contain;
@@ -16,34 +16,27 @@
 		</style>
 	</head>
 	<body>
-		<div id="desktop">
-			<div id="navigation">
-				<div class="middle">
-					<div class="loader"></div>
-				</div>
+		<div id="loadshade">
+			<button class="tooltip" id="loadshadeClose">X</button>
+			<div class="middle">
+				<div class="loader"></div>
 			</div>
-			<center>
-				<br>
-				<img class="portarait" alt="Logo" src="img/favicon.png">
-				<h1>Christian Detailing</h1>
-				<p>Hi, i'm Christian (known online as "Squeaky Llama" or "SqueakyLlama1"), I am 14. I live in Taylorsville, Utah. I love to detail cars, I have a specific range that I am *sure* to go to on the "Range" page. Further ranges may be negotiated with me (visit "Contact" page). If you are curious about my previous jobs, go check out the "Jobs" page (sorted from newest to oldest). Reviews are on the "Reviews" page, uploaded from the "Write a review" section on the job contract. If you want more follow ups on my personal life, check out my YouTube channel <a href="https://www.youtube.com/@squeakyllama">"Squeaky Llama"</a> or head over to the "Blog" page.</p><br>
-				<p>If you are looking for a little more information on my detailing, please keep reading. My detailings are based on "Tiers", each tier has it's own price and benefits. That can be checked out on the "Pricing" page.</p><br>
-			</center>
 		</div>
-		<div id="mobile">
-			<div id="mnavigation">
-				<div class="middle">
-					<div class="loader"></div>
-				</div>
-			</div>
-			<center>
-				<br>
-				<img class="portarait" alt="Logo" src="img/favicon.png">
-				<h1>Christian Detailing</h1>
-				<p>Hi, i'm Christian (known online as "Squeaky Llama" or "SqueakyLlama1"), I am 14. I live in Taylorsville, Utah. I love to detail cars, I have a specific range that I am *sure* to go to on the "Range" page. Further ranges may be negotiated with me (visit "Contact" page). If you are curious about my previous jobs, go check out the "Jobs" page (sorted from newest to oldest). Reviews are on the "Reviews" page, uploaded from the "Write a review" section on the job contract. If you want more follow ups on my personal life, check out my YouTube channel <a href="https://www.youtube.com/@squeakyllama">"Squeaky Llama"</a> or head over to the "Blog" page.</p><br>
-				<p>If you are looking for a little more information on my detailing, please keep reading. My detailings are based on "Tiers", each tier has it's own price and benefits. That can be checked out on the "Pricing" page.</p><br>
-			</center>
+		<div id="mnavcontainer">
+			<div class="navmenu" id="navmenu"></div>
 		</div>
+		<div id="desktop-navigation"><div class="loader"></div></div>
+		<div id="mobile-navigation"><div class="loader"></div></div>
+
+		<!-- Webpage Content !-->
+
+		<center>
+			<img class="logo" alt="Logo" src="img/favicon.png">
+			<h1>Christian Detailing</h1>
+			<p>Hi, i'm Christian (known online as "Squeaky Llama" or "SqueakyLlama1"), I am 14. I live in Taylorsville, Utah. I love to detail cars. If you are curious about my previous jobs, go check out the "Jobs" page (sorted from newest to oldest). Reviews are on the "Reviews" page, uploaded from the "Write a review" section on the job contract. If you want more follow ups on my personal life, check out my YouTube channel <a href="https://www.youtube.com/@squeakyllama">"Squeaky Llama"</a> or head over to the "Blog" page.</p><br>
+			<p>If you are looking for a little more information on my detailing, please keep reading. My detailings are based on "Tiers", each tier has it's own price and benefits. That can be checked out on the "Pricing" page.</p><br>
+		</center>
+
 		<script src="src/index.js"></script>
 	</body>
 </html>

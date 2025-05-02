@@ -1,11 +1,11 @@
+<!DOCTYPE html>
 <html lang="en-us">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale: 1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Christian Detailing | Pricing</title>
-
-		<link rel="stylesheet" href="src/style.css">
-		<link rel="icon" type="x/png" href="img/favicon.png">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link rel="stylesheet" href="src/index.css">
 
 		<style>
 			.qr {
@@ -16,74 +16,29 @@
 		</style>
 	</head>
 	<body>
-		<div id="desktop">
-			<div id="navigation">
-				<div class="middle">
-					<div class="loader"></div>
-				</div>
+		<div id="loadshade">
+			<button class="tooltip" id="loadshadeClose">X</button>
+			<div class="middle">
+				<div class="loader"></div>
 			</div>
-			<center>
-				<h1>Pricing</h1>
-				<p>This page will include the price of each tier and extra fees, and ways to pay me.</p>
-				<h3>Tier Pricing & Fees</h3>
-				<table>
-					<tr>
-						<td>Basic     </td>
-						<td>Not Avaliable</td>
-					</tr>
-					<tr>
-						<td>Fresh     </td>
-						<td>Not Avaliable</td>
-					</tr>
-					<tr>
-						<td>Deep     </td>
-						<td>Not Avaliable</td>
-					</tr>
-					<tr>
-						<td>Hazardous Cleaning Fee - - - - </td>
-						<td>$15 - $25</td>
-					</tr>
-				</table>
-				<h3>Payment Options</h3>
-				<p>I take Cash and Venmo.</p>
-				<img class="qr" alt="venmoQR" src="img/venmoQR.png"><br>
-				<a href="https://account.venmo.com/u/christian-c-bone">Scan QR or click this link</a>
-			</center>
 		</div>
-		<div id="mobile">
-			<div id="mnavigation">
-				<div class="middle">
-					<div class="loader"></div>
-				</div>
-			</div>
-			<center>
-				<h1>Pricing</h1>
-				<p>This page will include the price of each tier and extra fees, and ways to pay me.</p>
-				<h3>Tier Pricing & Fees</h3>
-				<table>
-					<tr>
-						<td>Basic     </td>
-						<td>Not Avaliable</td>
-					</tr>
-					<tr>
-						<td>Fresh     </td>
-						<td>Not Avaliable</td>
-					</tr>
-					<tr>
-						<td>Deep     </td>
-						<td>Not Avaliable</td>
-					</tr>
-					<tr>
-						<td>Hazardous Cleaning Fee - - - - </td>
-						<td>$15 - $25</td>
-					</tr>
-				</table>
-				<h3>Payment Options</h3>
-				<p>I take Cash and Venmo.</p>
-				<img class="qr" alt="venmoQR" src="img/venmoQR.png"><br>
-				<a href="https://account.venmo.com/u/christian-c-bone">Scan QR or click this link</a>
-			</center>
+		<div id="mnavcontainer">
+			<div class="navmenu" id="navmenu"></div>
 		</div>
+		<div id="desktop-navigation"><div class="loader"></div></div>
+		<div id="mobile-navigation"><div class="loader"></div></div>
+
+		<!-- Webpage Content !-->
+
+		<center>
+			<h3>Pricing</h3>
+			<p>Not avaliable yet :(</p>
+			<h3>Payment Options</h3>
+			<p>I take Cash and Venmo.</p>
+			<img class="qr" alt="venmoQR" src="img/venmoQR.png"><br>
+			<a href="https://account.venmo.com/u/christian-c-bone">Scan QR or click this link</a>
+		</center>
+
 		<script src="src/index.js"></script>
 	</body>
 </html>
