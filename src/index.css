@@ -96,6 +96,18 @@ img {
 	border-color: white;
 }
 
+#desktop-navigation button:hover, .navmenu button:hover {
+	background-color: white;
+	color: black;
+	border-color: white;
+}
+
+#desktop-navigation button:focus, .navmenu button:focus {
+	background-color: white;
+	color: black;
+	border-color: white;
+}
+
 #mnavcontainer {
     position: fixed;
     top: 0;
@@ -141,6 +153,16 @@ img {
     font-weight: bolder;
     font-size: 15px;
     flex: 1;
+}
+
+.navmenu button:hover {
+    background-color: white;
+	color: black;
+}
+
+.navmenu button:focus {
+    background-color: white;
+	color: black;
 }
 
 .navmenu button.active {
