@@ -5,7 +5,7 @@ const desktopNavigaton = document.getElementById('desktop-navigation');
 const mobileNavigaton = document.getElementById('mobile-navigation');
 
 const navigationButtons = [
-	{ label: "Home", url: "index.html", keyword: " Home" },
+	{ label: "Home", url: "index.html", keyword: " Christian" },
     { label: "Contact", url: "contact.html", keyword: " Contact" },
     { label: "Jobs", url: "jobs.html", keyword: " Jobs" },
     { label: "Blog", url: "blog.html", keyword: " Blog" },
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('visible');
         populateDesktopNavigation();
 		populateMobileNavigation();
-        setTimeout(closeload, 750);
-    }, 250);
+        setTimeout(closeload, 75);
+    }, 75);
 });
 
 var navMenuOpen = false;
@@ -77,18 +77,14 @@ function populateMobileNavigation() {
         menu.appendChild(option);
     });
 
-    setTimeout(() => {
         navigationContainer.innerHTML = '';
         middleDiv.appendChild(navbutton);
         navigationContainer.appendChild(middleDiv);
         document.getElementById('mnavcontainer').addEventListener('click', closeNavMenu);
-    }, 750);
 }
 
 function populateDesktopNavigation() {
     let navigationContainer = document.getElementById('desktop-navigation');
-
-    setTimeout(() => {
         navigationContainer.innerHTML = '';
         navigationButtons.forEach(button => {
             let buttonElement = document.createElement("button");
@@ -101,7 +97,6 @@ function populateDesktopNavigation() {
             }
             navigationContainer.appendChild(buttonElement);
         });
-    }, 750);
 }
 
 function navigate(event, url) {
