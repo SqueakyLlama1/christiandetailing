@@ -7,6 +7,7 @@ const mobileNavigaton = document.getElementById('mobile-navigation');
 const navigationButtons = [
 	{ label: "Home", url: "index.html", keyword: " Christian" },
     { label: "Contact", url: "contact.html", keyword: " Contact" },
+	{ label: "Socials", url: "social.html", keyword: " Socials" },
     { label: "Jobs", url: "jobs.html", keyword: " Jobs" },
     { label: "Blog", url: "blog.html", keyword: " Blog" },
     { label: "Tiers", url: "tiers.html", keyword: " Tiers" },
@@ -77,26 +78,27 @@ function populateMobileNavigation() {
         menu.appendChild(option);
     });
 
-        navigationContainer.innerHTML = '';
-        middleDiv.appendChild(navbutton);
-        navigationContainer.appendChild(middleDiv);
-        document.getElementById('mnavcontainer').addEventListener('click', closeNavMenu);
+    navigationContainer.innerHTML = '';
+    middleDiv.appendChild(navbutton);
+    navigationContainer.appendChild(middleDiv);
+    document.getElementById('mnavcontainer').addEventListener('click', closeNavMenu);
 }
 
 function populateDesktopNavigation() {
     let navigationContainer = document.getElementById('desktop-navigation');
-        navigationContainer.innerHTML = '';
-        navigationButtons.forEach(button => {
-            let buttonElement = document.createElement("button");
-			buttonElement.textContent = button.label;
-            buttonElement.onclick = function(event) {
-                navigate(event, button.url);
-            };
-            if (document.title.includes(button.keyword)) {
-                buttonElement.classList.add('active');
-            }
-            navigationContainer.appendChild(buttonElement);
-        });
+
+    navigationContainer.innerHTML = '';
+    navigationButtons.forEach(button => {
+        let buttonElement = document.createElement("button");
+		buttonElement.textContent = button.label;
+        buttonElement.onclick = function(event) {
+            navigate(event, button.url);
+        };
+        if (document.title.includes(button.keyword)) {
+            buttonElement.classList.add('active');
+        }
+        navigationContainer.appendChild(buttonElement);
+    });
 }
 
 function navigate(event, url) {
