@@ -8,6 +8,7 @@ const navigationButtons = [
 	{ label: "Home", url: "index.html", keyword: " Christian" },
     { label: "Contact", url: "contact.html", keyword: " Contact" },
 	{ label: "Socials", url: "social.html", keyword: " Socials" },
+	{ label: "Instructions", url: "instructions.html", keyword: " Instructions"},
     { label: "Tiers", url: "tiers.html", keyword: " Tiers" },
     { label: "Pricing & Payment", url: "pricing.html", keyword: " Pricing" },
     { label: "Terms & Conditions", url: "terms.html", keyword: " Terms" }
