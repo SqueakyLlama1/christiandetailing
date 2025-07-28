@@ -1,51 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Christian Detailing | Pricing</title>
-		<link rel="icon" type="image/png" href="img/favicon.png">
-		<link rel="stylesheet" href="src/index.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Christian Detailing | Pricing</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="src/index.css">
+	
+	<style>
+		.qr {
+			width: 90%;
+			height: auto;
+			object-fit: contain;
+		}
+		
+		.tierIcon {
+			width: 50%;
+			height: auto;
+			object-fit: contain;
+		}
+	</style>
+</head>
+<body>
+	<div id="loadshade">
+		<button class="tooltip" id="loadshadeClose">X</button>
+		<div class="middle">
+			<div class="loader"></div>
+		</div>
+	</div>
+	<div id="mnavcontainer">
+		<div class="navmenu" id="navmenu"></div>
+	</div>
+	<div id="desktop-navigation"><div class="loader"></div></div>
+	<div id="mobile-navigation"><div class="loader"></div></div>
+	
+	<!-- Webpage Content !-->
+	
+	<center>
+		<div class="pricing-sections">
+			<div class="pricingSectionDeals">
+				<img alt="Deals Logo" class="tierIcon" src="img/deals.png"><br>
+				<h1>Deals</h1>
+				<span><b>&bull; Birthday - 15% off within 1 week before or after the car owner's birthday.</b></span><br>
+				<span><b>&bull; Bulk - For each vehicle in the same class (eg. SUV) getting the same tier (eg. Basic) is +5% off for each vehicle, caps out at 3 vehicles</b></span>
+			</div>
 
-		<style>
-			.qr {
-				width: 25%;
-				height: auto;
-				object-fit: contain;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="loadshade">
-			<button class="tooltip" id="loadshadeClose">X</button>
-			<div class="middle">
-				<div class="loader"></div>
+			<div class="pricingSectionBasic">
+				<img alt="Basic Tier Logo" class="tierIcon" src="img/basic.png"><br>
+				<h1>$15</h1>
+				<span><b>&bull; Window Cleaning</b></span><br>
+				<span><b>&bull; Light Surface Cleaning</b></span><br>
+				<span><b>&bull; Visible Space Interior Vacuuming</b></span><br>
+				<span><b>&bull; Mat Cleaning</b></span>
+			</div>
+			
+			<div class="pricingSectionFresh">
+				<span class="sale-tag">15% OFF</span>
+				<img alt="Fresh Tier Logo" class="tierIcon" src="img/fresh.png"><br>
+				<h1><s>$30</s> $25</h1>
+				<span><b>&bull; Window Cleaning</b></span><br>
+				<span><b>&bull; Medium Surface Cleaning</b></span><br>
+				<span><b>&bull; Complete Interior Vacuuming (Excludes Trunk)</b></span><br>
+				<span><b>&bull; Mat Cleaning</b></span><br>
+				<span><b>&bull; Medium Carpet Cleaning</b></span><br>
+				<span><b>&bull; Vinyl, Rubber, Plastic, and Leather Shining + Protectant</b></span>
+			</div>
+			
+			<div class="pricingSectionDeep">
+				<span class="sale-tag">15% OFF</span>
+				<img alt="Deep Tier Logo" class="tierIcon" src="img/deep.png"><br>
+				<h1><s>$50</s> $42</h1>
+				<span><b>&bull; Deep Carpet Cleaning</b></span><br>
+				<span><b>&bull; Window Cleaning</b></span><br>
+				<span><b>&bull; Complete Interior Vacuuming</b></span><br>
+				<span><b>&bull; Mat Cleaning</b></span><br>
+				<span><b>&bull; Vinyl, Rubber, Plastic, and Leather Shining + Protectant</b></span><br>
+				<span><b>&bull; Minivan or SUV Trunk Cleaning</b></span><br>
+				<span><b>&bull; Deep Surface Cleaning</b></span>
+			</div>
+
+			<div class="pricingSectionPayment">
+				<img alt="Payment Options Logo" class="tierIcon" src="img/payment.png"><br>
+				<span><b>&bull; Cash</b></span><br>
+				<span><b>&bull; Venmo</b></span><br><br>
+				<img class="qr" alt="venmoQR" src="img/venmoQR.png"><br><br>
+				<a href="https://account.venmo.com/u/christian-c-bone"><b>Scan QR or click this link</b></a>
 			</div>
 		</div>
-		<div id="mnavcontainer">
-			<div class="navmenu" id="navmenu"></div>
-		</div>
-		<div id="desktop-navigation"><div class="loader"></div></div>
-		<div id="mobile-navigation"><div class="loader"></div></div>
-
-		<!-- Webpage Content !-->
-
-		<center>
-			<h3>Pricing</h3>
-			<p>Basic Tier: $30</p>
-			<p>Fresh Tier: $50</p>
-			<p>Deep Tier: $75</p><br>
-			<h4>Why you might choose other services over Christian Detailing:</h4>
-			<p>While we are a great service and hope that you will choose us, it's not fair not to include the good about other services.</p>
-			<p>- Other services are more professional and have been in business much longer.</p>
-			<p>- Other services may be faster as they know all the tips and tricks.</p><br>
-			<h2>Hope to see you soon!</h2><br>
-			<h3>Payment Options</h3>
-			<p>I take Cash and Venmo.</p>
-			<img class="qr" alt="venmoQR" src="img/venmoQR.png"><br>
-			<a href="https://account.venmo.com/u/christian-c-bone">Scan QR or click this link</a>
-		</center>
-
-		<script src="src/index.js"></script>
-	</body>
+	</center>
+	<script src="src/index.js"></script>
+</body>
 </html>
