@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('visible');
         populateDesktopNavigation();
 		populateMobileNavigation();
-        setTimeout(closeload, 75);
+        setTimeout(closeload, 150);
     }, 75);
 });
 
