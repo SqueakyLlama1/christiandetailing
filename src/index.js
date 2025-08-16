@@ -15,12 +15,10 @@ const navigationButtons = [
 
 document.addEventListener('DOMContentLoaded', function() {
     load(false);
-    setTimeout(function() {
-        document.body.classList.add('visible');
-        populateDesktopNavigation();
-		populateMobileNavigation();
-        setTimeout(closeload, 150);
-    }, 75);
+    document.body.classList.add('visible');
+    populateDesktopNavigation();
+	populateMobileNavigation();
+    setTimeout(closeload, 300);
 });
 
 var navMenuOpen = false;
@@ -104,7 +102,7 @@ function navigate(event, url) {
     document.body.classList.add('fade-out');
     setTimeout(() => {
         window.location.href = url;
-    }, 500);
+    }, 150);
 }
 
 function load(cancancel, cancelhide) {
