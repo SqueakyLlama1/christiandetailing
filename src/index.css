@@ -96,23 +96,23 @@ img {
 
 #desktop-navigation button.active,
 .navmenu button.active {
-    background-color: white;
+    background-color: #ffb780;
     color: black;
-    border-color: white;
+    border-color: #ffb780;
 }
 
 #desktop-navigation button:hover,
 .navmenu button:hover {
-    background-color: white;
+    background-color: #ffb780;
     color: black;
-    border-color: white;
+    border-color: #ffb780;
 }
 
 #desktop-navigation button:focus,
 .navmenu button:focus {
-    background-color: white;
+    background-color: #ffb780;
     color: black;
-    border-color: white;
+    border-color: #ffb780;
 }
 
 #mnavcontainer {
@@ -164,19 +164,19 @@ img {
 }
 
 .navmenu button:hover {
-    background-color: white;
+    background-color: #ffb780;
     color: black;
 }
 
 .navmenu button:focus {
-    background-color: white;
+    background-color: #ffb780;
     color: black;
 }
 
 .navmenu button.active {
-    background-color: white;
+    background-color: #ffb780;
     color: black;
-    border-color: white;
+    border-color: #ffb780;
 }
 
 .center {
